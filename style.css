@@ -24,6 +24,10 @@ div a {
   background-color: #bc8f8f;
   line-height: 16px;
 }
+a {
+  display: flex;
+  justify-content: center;
+}
 /*  */
 .div_r a:hover {
   color: black;
@@ -52,7 +56,7 @@ div p {
 /* set table */
 
 .table {
-  font-size: 24px;
+  font-size: 3vh;
   line-height: 50px;
   margin: 0 auto;
 }
@@ -68,12 +72,11 @@ tr {
 }
 /* sytle in imple.html */
 .box {
-  width: 1000px;
-  height: 890px;
+  width: 50%;
   background-color: rgb(201, 197, 197);
-  font-size: 25px;
+  font-size: 3vh;
   padding: 25px 35px;
-  height: 100vh;
+  height: 60rem;
   line-height: 60px;
   margin: 0 auto;
 }
