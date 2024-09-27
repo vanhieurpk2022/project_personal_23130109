@@ -25,7 +25,7 @@
           <td>
             <input
               type="text"
-              id="ID"
+              name="ID"
               placeholder="mã số sinh viên"
               size="70"
             />
@@ -34,13 +34,17 @@
         <tr class="table1 row">
           <td><label class="label" for="fullName">Họ và tên</label></td>
           <td>
-            <input type="text" id="fullName" placeholder="nhập họ và tên" />
+            <input type="text" name="fullName" placeholder="nhập họ và tên" />
           </td>
         </tr>
         <tr class="table1 row">
           <td><label class="label" for="phone">Số điện thoại</label></td>
           <td>
-            <input type="number" id="phone" placeholder="nhập số điện thoại" />
+            <input
+              type="number"
+              name="phone"
+              placeholder="nhập số điện thoại"
+            />
           </td>
         </tr>
         <tr class="table1 row">
@@ -56,20 +60,26 @@
         </tr>
         <tr class="table1 row">
           <td colspan="2">
-            <input type="submit" value="Thêm" />
+            <input type="submit" value="Thêm" name="add" />
             <input type="reset" value="Làm Lại" />
           </td>
         </tr>
       </table>
-      <table class="table2">
-        <tr class="table2 row">
-          <th>Mã Số Sinh Viên</th>
-          <th>Họ và tên</th>
-          <th>Số Điện Thoại</th>
-          <th>Giới tính</th>
-          <th>Ngày Sinh</th>
-        </tr>
+
+      <table id="studentTable" border="1">
+        <thead>
+          <tr class="table2 row">
+            <th>Mã Số Sinh Viên</th>
+            <th>Họ và tên</th>
+            <th>Số Điện Thoại</th>
+            <th>Giới tính</th>
+            <th>Ngày Sinh</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
       </table>
     </form>
+
+    <script src="js.js"></script>
   </body>
 </html>

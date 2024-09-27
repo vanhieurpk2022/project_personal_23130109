@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 62.5%;
+}
 
 body {
   text-align: center;
@@ -15,7 +18,7 @@ div a {
 }
 /* set font a */
 .div_r a {
-  font-size: 25px;
+  font-size: 2.5rem;
   padding: 20px 20px;
   border-radius: 25px;
   color: black;
@@ -43,14 +46,14 @@ a {
 }
 
 div p {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 /* set content */
 .content p {
   display: inline-block;
   width: 1100px;
-  font-size: 27px;
+  font-size: 2.7rem;
   margin-top: 25px;
 }
 /* set table */
@@ -59,6 +62,7 @@ div p {
   font-size: 3vh;
   line-height: 50px;
   margin: 0 auto;
+  min-width: 100px;
 }
 .table tr:first-of-type {
   background-color: #d8bfd8;
@@ -72,11 +76,13 @@ tr {
 }
 /* sytle in imple.html */
 .box {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   background-color: rgb(201, 197, 197);
-  font-size: 3vh;
+  font-size: 3rem;
   padding: 25px 35px;
-  height: 60rem;
+  height: 1000px;
   line-height: 60px;
   margin: 0 auto;
 }
@@ -86,7 +92,7 @@ input[type="number"] {
   border: 1px solid transparent;
   border-radius: 5px;
   background-color: #dedede;
-  font-size: 18px; /* Phóng to cỡ chữ trong input */
+  font-size: 1.8rem; /* Phóng to cỡ chữ trong input */
   padding: 8px;
   text-align: left;
 }
@@ -94,7 +100,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="date"],
 input[type="radio"] {
-  font-size: 20px;
+  font-size: 2rem;
 }
 .row td {
   padding: 7px;
