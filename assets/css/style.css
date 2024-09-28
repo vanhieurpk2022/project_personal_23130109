@@ -97,11 +97,8 @@ input[type="number"] {
   padding: 8px;
   text-align: left;
 }
-input[type="submit"],
-input[type="reset"],
 input[type="date"],
-input[type="radio"],
-input[type="remove"] {
+input[type="radio"] {
   font-size: 2rem;
 }
 .row td {
@@ -109,4 +106,17 @@ input[type="remove"] {
 }
 .table2 {
   width: 100%;
+}
+/* style button */
+.button_input {
+  display: flex;
+  height: 30px;
+  font-size: 2rem;
+  flex-direction: row;
+  margin-left: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.button_input input {
+  padding: 12px;
 }
