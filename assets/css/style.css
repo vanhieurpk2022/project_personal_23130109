@@ -2,63 +2,81 @@ html {
   font-size: 62.5%;
 }
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  text-align: center;
-  font-family: "Poppins", system-ui;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
 }
+/* ===================Common============= */
 
-.div_r {
-  background-color: #696969;
-}
-div a {
-  line-height: 50px;
-}
-/* set font a */
-.div_r a {
-  font-size: 2.5rem;
-  padding: 20px 20px;
-  border-radius: 25px;
-  color: black;
-  text-decoration: none;
+.btn {
   display: inline-block;
-  background-color: #bc8f8f;
-  line-height: 16px;
+  min-width: 118px;
+  padding: 0 15px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 24.5px;
+  background: #171100;
 }
 a {
+  text-decoration: none;
+}
+.main-contain {
+  width: 1118px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+
+/* header */
+.header {
+  background: #fffcf4;
+}
+.header .body {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 36px 0;
 }
-/*  */
-.div_r a:hover {
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  position: relative;
+}
+.nav li.active a,
+.nav a:hover {
   color: black;
-  background-color: azure;
-}
-/* set div 2 */
-.div_p h1 {
-  display: inline-block;
-}
-.div_p {
-  width: 700px;
-  margin: 70px auto;
+  text-shadow: 1px 0 0 currentColor;
 }
 
-div p {
-  font-size: 2.5rem;
+.header .btn-sign-up,
+.header .btn-sign-up {
+  min-width: 144px;
 }
 
-/* set content */
-.content p {
-  display: inline-block;
-  width: 1100px;
-  font-size: 2.7rem;
-  margin-top: 25px;
+.header .action {
+  margin-left: 49px;
 }
-/* set table */
 
+.nav.list ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.list ul {
+  width: 1130px;
+}
+/* table */
 .table {
   font-size: 3vh;
   line-height: 50px;
@@ -72,10 +90,6 @@ div p {
   background-color: #e6e6fa;
 }
 
-tr {
-  border: #696969 solid 25px;
-}
-/* sytle in Labs.html */
 .box {
   display: flex;
   flex-direction: column;
@@ -108,15 +122,61 @@ input[type="radio"] {
   width: 100%;
 }
 /* style button */
-.button_input {
-  display: flex;
-  height: 30px;
-  font-size: 2rem;
-  flex-direction: row;
-  margin-left: 200px;
-  justify-content: center;
-  align-items: center;
+.button_input input {
+  height: 50px;
+  font-size: 1.6rem;
 }
 .button_input input {
   padding: 12px;
+}
+.nav_lab a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+}
+/* Highlight row on hover */
+#studentTable tbody tr:hover {
+  background-color: #f0f0f0; /* Set the background color you prefer */
+  cursor: pointer; /* Optional: changes the cursor to a pointer when hovering */
+}
+/* Modal Styles */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px; /* Set width of modal */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* To position the close button correctly */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
 }
