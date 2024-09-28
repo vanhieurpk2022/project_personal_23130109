@@ -1,13 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 html {
   font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   text-align: center;
+  font-family: "Poppins", system-ui;
 }
 
 .div_r {
@@ -74,13 +75,13 @@ div p {
 tr {
   border: #696969 solid 25px;
 }
-/* sytle in imple.html */
+/* sytle in Labs.html */
 .box {
   display: flex;
   flex-direction: column;
   width: 50%;
   background-color: rgb(201, 197, 197);
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 25px 35px;
   height: 1000px;
   line-height: 60px;
@@ -92,14 +93,15 @@ input[type="number"] {
   border: 1px solid transparent;
   border-radius: 5px;
   background-color: #dedede;
-  font-size: 1.8rem; /* Phóng to cỡ chữ trong input */
+  font-size: 1.6rem; /* Phóng to cỡ chữ trong input */
   padding: 8px;
   text-align: left;
 }
 input[type="submit"],
 input[type="reset"],
 input[type="date"],
-input[type="radio"] {
+input[type="radio"],
+input[type="remove"] {
   font-size: 2rem;
 }
 .row td {

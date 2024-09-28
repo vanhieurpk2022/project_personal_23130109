@@ -26,6 +26,7 @@ document
     var cell3 = newRow.insertCell(2);
     var cell4 = newRow.insertCell(3);
     var cell5 = newRow.insertCell(4);
+    var cell6 = newRow.insertCell(5);
 
     // Lấy giới tính được chọn
     let gender = "";
@@ -34,13 +35,14 @@ document
         gender = genderInputs[i].nextSibling.textContent.trim();
       }
     }
-
+    let stt = 0;
     // Thêm nội dung vào các ô từ giá trị của input
-    cell1.innerHTML = getID.value;
-    cell2.innerHTML = fullName.value;
-    cell3.innerHTML = phone.value;
-    cell4.innerHTML = gender;
-    cell5.innerHTML = birthday.value;
+    cell1.innerHTML = ++stt;
+    cell2.innerHTML = getID.value;
+    cell3.innerHTML = fullName.value;
+    cell4.innerHTML = phone.value;
+    cell5.innerHTML = gender;
+    cell6.innerHTML = birthday.value;
 
     // Hiển thị thông báo thêm thành công
     alert("Đã thêm Thành Công");
