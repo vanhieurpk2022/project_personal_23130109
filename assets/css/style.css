@@ -9,7 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /* ===================Common============= */
-
+.body .getImg .logo {
+  height: 100px;
+  width: 100px;
+}
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -179,4 +182,110 @@ input[type="radio"] {
 
 button {
   margin-top: 10px;
+}
+
+/*  Main Content CV */
+/* Khung 1 */
+.main {
+  background-color: #fffcf4;
+}
+.content_part1 {
+  display: flex;
+  margin: auto;
+  width: 850px;
+  height: 1150px;
+}
+.part-1 {
+  width: 425px;
+  height: 1150px;
+}
+.part-1 .user {
+  margin: 10px auto;
+  width: 410px;
+  height: 140px;
+}
+.avatar {
+  border-radius: 50%;
+}
+.user {
+  display: flex;
+  width: 100px;
+}
+.fullName {
+  margin: auto;
+  text-align: center;
+  width: 234px;
+  height: 84px;
+}
+.fullName h3 {
+  padding: 7px;
+}
+.part-1 li {
+  margin: auto;
+  width: 365px;
+  height: 25px;
+}
+
+.industryKnow,
+.language,
+.social,
+.hobbies {
+  margin: 8px;
+}
+.industryKnow h1,
+.Language h1,
+.Social h1,
+.Hobbies h1 {
+  padding: 10px;
+}
+.industryKnow li {
+  width: 350px;
+  list-style-type: disc;
+}
+/*  set khoảng cách giữa chữ language vs phần tử dưới */
+.language h1 {
+  padding: 8px;
+}
+.social h1 {
+  padding: 8px;
+}
+.hobbies h1 {
+  padding: 8px;
+}
+
+.part-1 div {
+  padding: 10px;
+}
+/* =============================== */
+.enjoy ul {
+  display: flex;
+}
+/* ==============Content Part 2 ================ */
+/* Khung 2 */
+
+.part-2 {
+  width: 425px;
+  height: 1150px;
+  border-left: 1px solid;
+}
+.experience {
+  margin: 10px auto;
+  width: 400px;
+  height: 340px;
+}
+.education {
+  margin: 10px auto;
+  height: 190px;
+  width: 401px;
+}
+.mySkill {
+  margin: 10px auto;
+  height: 223px;
+  width: 401px;
+}
+.otherSkill {
+  margin: 10px auto;
+  height: 350px;
+  width: 401px;
+  display: flex;
 }
