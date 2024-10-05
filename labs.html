@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>hci-2025</title>
   </head>
-  <body style="height: 5000px">
+  <body >
     <header class="header fixed">
       <div class="main-contain">
         <div class="body">
@@ -80,78 +80,86 @@
                 <li><a href="./lab3.html">Lab3</a></li>
               </ul>
             </nav>
+            <form action="" class="box">
+              <table class="table1">
+                <br />
+                <tr class="table1 row">
+                  <td><label class="label" for="ID">Mã số sinh viên </label></td>
+                  <td>
+                    <input
+                      type="text"
+                      name="ID"
+                      placeholder="mã số sinh viên"
+                      size="70"
+                    />
+                  </td>
+                </tr>
+                <tr class="table1 row">
+                  <td><label class="label" for="fullName">Họ và tên</label></td>
+                  <td>
+                    <input type="text" name="fullName" placeholder="nhập họ và tên" />
+                  </td>
+                </tr>
+                <tr class="table1 row">
+                  <td><label class="label" for="phone">Số điện thoại</label></td>
+                  <td>
+                    <input
+                      type="number"
+                      name="phone"
+                      placeholder="nhập số điện thoại"
+                    />
+                  </td>
+                </tr>
+                <tr class="table1 row">
+                  <td><label for="gender">Giới Tính</label></td>
+                  <td>
+                    <label><input type="radio" name="gender" id="gender" />Nam</label>
+                    <label><input type="radio" name="gender" id="gender" />Nữ</label>
+                  </td>
+                </tr>
+                <tr class="table1 row">
+                  <td><label for="birthday">Ngày Sinh</label></td>
+                  <td><input type="date" id="birthday" /></td>
+                </tr>
+                <tr class="table1 row">
+                  <td >
+                    <div class="button_input">
+                      <input type="submit" value="thêm" name="add" />
+                      <input type="reset" value="làm lại" />
+                      <input type="button" value="sửa" id="remove" />
+                      <input type="button" value="Tìm Kiếm" id="find">
+                      <input type="text" placeholder="search" id="data" />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+        
+              <table id="studentTable" border="1">
+                <thead>
+                  <tr class="table2 row">
+                    <th>STT</th>
+                    <th>Mã Số Sinh Viên</th>
+                    <th>Họ và tên</th>
+                    <th>Số Điện Thoại</th>
+                    <th>Giới tính</th>
+                    <th>Ngày Sinh</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </form>
           </div>
+     
         </div>
+      
       </main>
-      <form action="" class="box">
-        <table class="table1">
-          <br />
-          <tr class="table1 row">
-            <td><label class="label" for="ID">Mã số sinh viên </label></td>
-            <td>
-              <input
-                type="text"
-                name="ID"
-                placeholder="mã số sinh viên"
-                size="70"
-              />
-            </td>
-          </tr>
-          <tr class="table1 row">
-            <td><label class="label" for="fullName">Họ và tên</label></td>
-            <td>
-              <input type="text" name="fullName" placeholder="nhập họ và tên" />
-            </td>
-          </tr>
-          <tr class="table1 row">
-            <td><label class="label" for="phone">Số điện thoại</label></td>
-            <td>
-              <input
-                type="number"
-                name="phone"
-                placeholder="nhập số điện thoại"
-              />
-            </td>
-          </tr>
-          <tr class="table1 row">
-            <td><label for="gender">Giới Tính</label></td>
-            <td>
-              <label><input type="radio" name="gender" id="gender" />Nam</label>
-              <label><input type="radio" name="gender" id="gender" />Nữ</label>
-            </td>
-          </tr>
-          <tr class="table1 row">
-            <td><label for="birthday">Ngày Sinh</label></td>
-            <td><input type="date" id="birthday" /></td>
-          </tr>
-          <tr class="table1 row">
-            <td >
-              <div class="button_input">
-                <input type="submit" value="thêm" name="add" />
-                <input type="reset" value="làm lại" />
-                <input type="button" value="sửa" id="remove" />
-                <input type="button" value="Tìm Kiếm" id="find">
-                <input type="text" placeholder="search" id="data" />
-              </div>
-            </td>
-          </tr>
-        </table>
-  
-        <table id="studentTable" border="1">
-          <thead>
-            <tr class="table2 row">
-              <th>STT</th>
-              <th>Mã Số Sinh Viên</th>
-              <th>Họ và tên</th>
-              <th>Số Điện Thoại</th>
-              <th>Giới tính</th>
-              <th>Ngày Sinh</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </form>
+      
 
       <script src="./assets/javascript/javaScript.js"></script>
+      <footer class="footer">
+        <div class="line_footer">
+          <i class="fa-regular fa-copyright"></i> Copyright © 2024
+        </div>
+      </footer>
   </body>
 </html>

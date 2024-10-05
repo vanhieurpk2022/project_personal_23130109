@@ -289,3 +289,19 @@ button {
   width: 401px;
   display: flex;
 }
+/* footer */
+.footer {
+  display: flex;
+  height: 236px;
+  background-color: black;
+}
+.line_footer {
+  margin: 25px auto;
+  width: 645px;
+  height: 90px;
+  color: white;
+}
+/* main index */
+.main-content {
+  height: 1000px;
+}
