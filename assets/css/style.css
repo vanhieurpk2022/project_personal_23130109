@@ -336,18 +336,39 @@ button {
   width: 600px;
 }
 .pararap {
-  height: 500px;
+  position: relative;
+  height: 650px;
   width: 550px;
-  margin: auto 25px;
+  margin: 160px 27px;
 }
 .pararap h1 {
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: bold;
 }
 .pararap p {
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
-  padding: 25px;
-  font-size: 25px;
+  padding: 20px;
+  width: 550px;
+  height: 100px;
+  font-size: 23px;
 }
+.pararap div:nth-last-child(2) {
+  display: flex;
+  height: 35px;
+  width: 320px;
+}
+.pararap div a {
+  color: white;
+  width: 172px;
+  height: 65px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 25%;
+  padding: 20px;
+  background-color: #ffd700;
+}
+
 /* =================================POP - UP LoGIn */
 .popup {
   display: none;
