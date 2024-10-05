@@ -94,6 +94,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/javascript/javaScript.js"></script>
+
     <title>hci-2025</title>
   </head>
   <body>
@@ -111,7 +113,7 @@
           <!-- nav -->
           <nav class="nav">
             <ul>
-              <li class="active">
+              <li>
                 <a href="./index.html">Home</a>
               </li>
               <li>
@@ -124,8 +126,30 @@
           </nav>
           <!-- btn action -->
           <div class="action">
-            <a href="" class="btn btn-sign-up">Sign Up</a>
-            <a href="" class="btn login">Login</a>
+            <button for="show" class="btn btn-sign-up">Sign Up</button>
+            <button for="show" id="show-login">Login</button>
+          </div>
+        </div>
+      </div>
+      <!-- Sign Up Form -->
+      <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+          <h2>Login</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="emaill" placeholder="Enter email" />
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+          </div>
+          <div class="form-element"><a href="#">Forgot password?</a><br /></div>
+          <div class="form-element">
+            <button>Sign in</button>
+          </div>
+          <div class="form-element">
+            <p>Don't have an account? <a href="">Sign up</a></p>
           </div>
         </div>
       </div>

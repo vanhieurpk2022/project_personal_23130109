@@ -34,6 +34,7 @@
     <meta name="theme-color" content="#ffffff">
  
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/javascript/javaScript.js"></script>
     <title>hci-2025</title>
   </head>
   <body >
@@ -65,48 +66,74 @@
           </nav>
           <!-- btn action -->
           <div class="action">
-            <a href="" class="btn btn-sign-up">Sign Up</a>
-            <a href="" class="btn login">Login</a>
+            <button for="show" class="btn btn-sign-up">Sign Up</button>
+            <button for="show" id="show-login">Login</button>
           </div>
         </div>
+          <nav class="nav list">
+            <ul>
+              <li><a href="./labs.html">Lab1</a></li>
+              <li><a href="./lab2.html">Lab2</a></li>
+              <li><a href="./lab3.html">Lab3</a></li>
+            </ul>
+        </div>
       </div>
+      <!-- Sign Up Form -->
+      <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+          <h2>Login</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="emaill" placeholder="Enter email">
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+          </div>
+          <div class="form-element">
+            <a href="#">Forgot password?</a><br>
+          </div>
+          <div class="form-element">
+            <button>Sign in</button>
+          </div>
+          <div class="form-element">
+            <p >Don't have an account? <a href="">Sign up</a></p>
+          </div>
+        </div>
+       </div>
+    </header>
       <main class="main">
         <div class="hero">
           <div class="main-content">
-            <nav class="nav list">
-              <ul>
-                <li><a href="./labs.html">Lab1</a></li>
-                <li><a href="./lab2.html">Lab2</a></li>
-                <li><a href="./lab3.html">Lab3</a></li>
-              </ul>
-            </nav>
+            
             <form action="" class="box">
               <table class="table1">
                 <br />
                 <tr class="table1 row">
-                  <td><label class="label" for="ID">Mã số sinh viên </label></td>
+                  <td><label class="label" for="ID">Mã Số Sinh Viên </label></td>
                   <td>
                     <input
                       type="text"
                       name="ID"
-                      placeholder="mã số sinh viên"
+                      placeholder="Mã số sinh viên"
                       size="70"
                     />
                   </td>
                 </tr>
                 <tr class="table1 row">
-                  <td><label class="label" for="fullName">Họ và tên</label></td>
+                  <td><label class="label" for="fullName">Họ Và Tên</label></td>
                   <td>
-                    <input type="text" name="fullName" placeholder="nhập họ và tên" />
+                    <input type="text" name="fullName" placeholder="Nhập Họ Và Tên" />
                   </td>
                 </tr>
                 <tr class="table1 row">
-                  <td><label class="label" for="phone">Số điện thoại</label></td>
+                  <td><label class="label" for="phone">Số Điện Thoại</label></td>
                   <td>
                     <input
                       type="number"
                       name="phone"
-                      placeholder="nhập số điện thoại"
+                      placeholder="Nhập Số Điện Thoại"
                     />
                   </td>
                 </tr>
@@ -124,11 +151,11 @@
                 <tr class="table1 row">
                   <td >
                     <div class="button_input">
-                      <input type="submit" value="thêm" name="add" />
-                      <input type="reset" value="làm lại" />
-                      <input type="button" value="sửa" id="remove" />
+                      <input type="submit" value="Thêm" name="add" class="btn-name"/>
+                      <input type="reset" value="Làm lại" />
+                      <input type="button" value="Sửa" id="remove" />
                       <input type="button" value="Tìm Kiếm" id="find">
-                      <input type="text" placeholder="search" id="data" />
+                      <input type="text" placeholder="Search" id="data" />
                     </div>
                   </td>
                 </tr>
@@ -139,11 +166,12 @@
                   <tr class="table2 row">
                     <th>STT</th>
                     <th>Mã Số Sinh Viên</th>
-                    <th>Họ và tên</th>
+                    <th>Họ và Tên</th>
                     <th>Số Điện Thoại</th>
                     <th>Giới tính</th>
                     <th>Ngày Sinh</th>
                   </tr>
+                 
                 </thead>
                 <tbody></tbody>
               </table>
@@ -154,12 +182,11 @@
       
       </main>
       
-
-      <script src="./assets/javascript/javaScript.js"></script>
       <footer class="footer">
         <div class="line_footer">
           <i class="fa-regular fa-copyright"></i> Copyright © 2024
         </div>
       </footer>
+      <script src="./assets/javascript/JSLabs.js"></script>
   </body>
 </html>
