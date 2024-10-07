@@ -326,12 +326,12 @@ button {
 }
 .content_main_1 {
   display: flex;
-  margin: 56px auto;
+  margin: 0 auto;
   height: 880px;
   width: 1300px;
 }
 .discover {
-  margin: 64px 32px;
+  margin: 45px 32px;
   height: 700px;
   width: 600px;
 }
