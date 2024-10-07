@@ -203,7 +203,7 @@ button {
   margin-top: 10px;
 }
 
-/*  Main Content CV */
+/*  Main Content CV ================About.html*/
 /* Khung 1 */
 .main {
   background-color: #fffcf4;
@@ -320,14 +320,14 @@ button {
   height: 90px;
   color: white;
 }
-/* main index */
+/* =======================main index ====================*/
 .main-content {
   height: 3000px;
 }
 .content_main_1 {
   display: flex;
-  margin: auto;
-  height: 900px;
+  margin: 56px auto;
+  height: 880px;
   width: 1300px;
 }
 .discover {
@@ -339,36 +339,117 @@ button {
   position: relative;
   height: 650px;
   width: 550px;
-  margin: 160px 27px;
+  margin: 140px 27px;
 }
-.pararap h1 {
-  font-size: 70px;
-  font-weight: bold;
+.pararap_content_1 {
+  margin: 10px auto;
+  height: 210px;
+  width: 500px;
 }
-.pararap p {
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  padding: 20px;
-  width: 550px;
+.pararap_content_2 {
+  margin: 10px auto;
   height: 100px;
+  width: 500px;
+}
+.pararap_content_1 h1 {
+  font-size: 65px;
+}
+.pararap_content_2 p {
   font-size: 23px;
+  font: italic;
+  color: rgba(0, 0, 0, 0.6);
 }
-.pararap div:nth-last-child(2) {
+.pararap .button-pararap {
   display: flex;
-  height: 35px;
-  width: 320px;
+  width: 180px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 20px;
+  background: #ffb900;
+  border-radius: 50px;
 }
-.pararap div a {
+.button-pararap a {
   color: white;
-  width: 172px;
-  height: 65px;
-  text-align: center;
-  font-size: 20px;
-  border-radius: 25%;
-  padding: 20px;
-  background-color: #ffd700;
+  font-size: 25px;
+}
+.pararap h3 {
+  margin-top: 50px;
+  width: 250px;
+  margin-left: 20px;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
+.pararap_content_3 {
+  display: flex;
+  height: 50px;
+  width: 450px;
+  margin: 10px 5px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 35px;
+}
+.pararap_content_3 strong {
+  font-weight: bold;
+  font-size: 45px;
+}
+.pararap_content_3 span {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+/* ========================Main Content 2 =================Index.html */
+.content_main_2 {
+  display: flex;
+  margin: 20px auto;
+  margin-top: 150px;
+  height: 800px;
+  width: 1450px;
+}
+.learnAbout {
+  margin-top: 50px;
+  height: 700px;
+  width: 600px;
+}
+.content_pararap_main_2 {
+  margin: 70px auto;
+  width: 700px;
+  height: 650px;
+}
+.content_pararap_main_2 div:first-child {
+  width: 650px;
+  margin: 10px auto;
+  height: 190px;
+}
+.content_pararap_main_2 div:nth-child(2) {
+  margin: auto;
+  height: 160px;
+  width: 650px;
+}
+.content_pararap_main_2 div:nth-child(3) {
+  display: flex;
+  width: 180px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  background: #ffb900;
+  border-radius: 50px;
+}
+.content_pararap_main_2 h1 {
+  font-size: 65px;
+}
+.content_pararap_main_2 p {
+  padding: 20px;
+  font-size: 23px;
+  font: italic;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content_pararap_main_2 a {
+  font-size: 25px;
+  color: white;
+}
 /* =================================POP - UP LoGIn */
 .popup {
   display: none;
