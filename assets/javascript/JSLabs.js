@@ -13,6 +13,8 @@ function addRow() {
         .nodeValue
     : "";
   const birthday = document.getElementById("birthday").value;
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
 
   // Create a new row
   const newRow = table.insertRow();
@@ -24,7 +26,8 @@ function addRow() {
   newRow.insertCell(3).innerText = phone;
   newRow.insertCell(4).innerText = gender;
   newRow.insertCell(5).innerText = birthday;
-
+  const cell7 = newRow.insertCell(6);
+  cell7.appendChild(checkbox);
   // Update the STT column after the new row is added
   updateSTT();
 }
@@ -151,3 +154,55 @@ document
   .addEventListener("click", function () {
     selectedRow = null;
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Giá trị mặc định
+  var defaultRow = {
+    stt: 1,
+    maSo: "23130109",
+    hoTen: "Nguyễn Văn A",
+    soDienThoai: "000000000",
+    gioiTinh: "Nam",
+    ngaySinh: "1999-12-12",
+  };
+
+  // Lấy bảng và thêm hàng mới vào phần tbody
+  var table = document
+    .getElementById("studentTable")
+    .getElementsByTagName("tbody")[0];
+  var newRow = table.insertRow();
+
+  // Thêm các ô vào hàng
+  var cell1 = newRow.insertCell(0);
+  var cell2 = newRow.insertCell(1);
+  var cell3 = newRow.insertCell(2);
+  var cell4 = newRow.insertCell(3);
+  var cell5 = newRow.insertCell(4);
+  var cell6 = newRow.insertCell(5);
+  var cell7 = newRow.insertCell(6);
+
+  // Tạo checkbox và thêm vào ô ghi chú
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  cell7.appendChild(checkbox);
+
+  // Gán giá trị cho các ô khác
+  cell1.innerHTML = defaultRow.stt;
+  cell2.innerHTML = defaultRow.maSo;
+  cell3.innerHTML = defaultRow.hoTen;
+  cell4.innerHTML = defaultRow.soDienThoai;
+  cell5.innerHTML = defaultRow.gioiTinh;
+  cell6.innerHTML = defaultRow.ngaySinh;
+});
+// nút xóa
+function deleteSelectedRows() {
+  var checkboxes = document.querySelectorAll(
+    "#studentTable tbody input[type='checkbox']"
+  );
+  checkboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      var row = checkbox.closest("tr");
+      row.remove();
+    }
+  });
+}

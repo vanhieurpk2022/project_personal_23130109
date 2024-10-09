@@ -10,12 +10,10 @@ body {
 }
 /* ===================Common============= */
 .body .getImg .logo {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
-.btn-name {
-  border-radius: 4%;
-}
+
 .btn,
 #show-login {
   display: inline-block;
@@ -62,6 +60,16 @@ a {
   position: relative;
 }
 /* labs html */
+/* button Delete */
+
+#delete {
+  height: 44px;
+  width: 75px;
+  position: absolute;
+  bottom: 100%;
+  right: 60px;
+  top: 0;
+}
 
 .nav.list {
   height: 50px;
@@ -88,6 +96,7 @@ a.active {
 }
 
 .header .action {
+  align-items: center;
   margin-left: 49px;
 }
 
@@ -115,11 +124,10 @@ a.active {
 .box {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   background-color: rgb(201, 197, 197);
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 25px 35px;
-  height: 1000px;
   line-height: 60px;
   margin: 0 auto;
 }
@@ -156,11 +164,20 @@ input[type="radio"] {
   text-decoration: none;
   font-size: 2rem;
 }
+#studentTable {
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
 /* Highlight row on hover */
 #studentTable tbody tr:hover {
   background-color: #f0f0f0; /* Set the background color you prefer */
   cursor: pointer; /* Optional: changes the cursor to a pointer when hovering */
 }
+#studentTable tr {
+  text-align: center;
+}
+
 /* Modal Styles */
 .modal {
   display: flex;
@@ -322,24 +339,24 @@ button {
 }
 /* =======================main index ====================*/
 .main-content {
-  height: 3000px;
+  width: 100%;
+  background: #fffcf4;
+  padding: 56px;
 }
 .content_main_1 {
   display: flex;
-  margin: 0 auto;
-  height: 880px;
-  width: 1300px;
+  height: 750px;
+  margin: auto;
+  width: 1211px;
 }
 .discover {
-  margin: 45px 32px;
-  height: 700px;
+  height: 687px;
   width: 600px;
 }
 .pararap {
   position: relative;
-  height: 650px;
+  height: 600px;
   width: 550px;
-  margin: 140px 27px;
 }
 .pararap_content_1 {
   margin: 10px auto;
@@ -451,9 +468,17 @@ button {
   color: white;
 }
 /* =================================POP - UP LoGIn */
+.screen {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
 .popup {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.25);
@@ -524,4 +549,28 @@ button {
 }
 div .form {
   margin: auto;
+}
+.table_data {
+  height: 125px;
+  padding: 25px;
+}
+/*  chỉnh sửa table  */
+
+.talbe_data_space .Search {
+  width: 500px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+.talbe_data_space {
+  position: relative;
+  width: 82%;
+  margin: auto;
+}
+#find {
+  font-size: 1.6rem;
+}
+#studentTable .table2.row {
+  background: gray;
+  color: white;
+  font-size: 1.7rem;
 }

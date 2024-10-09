@@ -78,30 +78,7 @@
             </ul>
         </div>
       </div>
-      <!-- Sign Up Form -->
-      <div class="popup">
-        <div class="close-btn">&times;</div>
-        <div class="form">
-          <h2>Login</h2>
-          <div class="form-element">
-            <label for="email">Email</label>
-            <input type="text" id="emaill" placeholder="Enter email">
-          </div>
-          <div class="form-element">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password">
-          </div>
-          <div class="form-element">
-            <a href="#">Forgot password?</a><br>
-          </div>
-          <div class="form-element">
-            <button>Sign in</button>
-          </div>
-          <div class="form-element">
-            <p >Don't have an account? <a href="">Sign up</a></p>
-          </div>
-        </div>
-       </div>
+      
     </header>
       <main class="main">
         <div class="hero">
@@ -154,29 +131,43 @@
                       <input type="submit" value="Thêm" name="add" class="btn-name"/>
                       <input type="reset" value="Làm lại" />
                       <input type="button" value="Sửa" id="remove" />
-                      <input type="button" value="Tìm Kiếm" id="find">
-                      <input type="text" placeholder="Search" id="data" />
+                      
                     </div>
                   </td>
+                  <td></td>
+                  
                 </tr>
               </table>
         
-              <table id="studentTable" border="1">
-                <thead>
-                  <tr class="table2 row">
-                    <th>STT</th>
-                    <th>Mã Số Sinh Viên</th>
-                    <th>Họ và Tên</th>
-                    <th>Số Điện Thoại</th>
-                    <th>Giới tính</th>
-                    <th>Ngày Sinh</th>
-                  </tr>
-                 
-                </thead>
-                <tbody></tbody>
-              </table>
+          
             </form>
+           
+           <div class="talbe_data_space">
+           <div class="Search"> 
+            <input type="button" value="Tìm Kiếm" id="find">
+            <input type="text" placeholder="Search" width="20" id="data" />
           </div>
+            <input type="button" onclick="deleteSelectedRows()" id="delete" value="Xóa">
+              <div class="table_data">
+                <table id="studentTable" border="1">
+                  <thead>
+                    <tr class="table2 row">
+                      <th>STT</th>
+                      <th>Mã Số Sinh Viên</th>
+                      <th>Họ và Tên</th>
+                      <th>Số Điện Thoại</th>
+                      <th>Giới tính</th>
+                      <th>Ngày Sinh</th>
+                      <th>Ghi Chú</th>
+                    </tr>
+                  </thead>
+                   
+                  <tbody></tbody>
+                </table>
+          </div>
+           </div>
+          </div>
+               
      
         </div>
       
@@ -187,6 +178,31 @@
           <i class="fa-regular fa-copyright"></i> Copyright © 2024
         </div>
       </footer>
+      <!-- Sign Up Form -->
+      <div class="screen"></div>
+      <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+          <h2>Login</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="emaill" placeholder="Enter email">
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+          </div>
+          <div class="form-element">
+            <a href="#">Forgot password?</a><br>
+          </div>
+          <div class="form-element">
+            <button>Sign in</button>
+          </div>
+          <div class="form-element">
+            <p >Don't have an account? <a href="">Sign up</a></p>
+          </div>
+        </div>
+       </div>
       <script src="./assets/javascript/JSLabs.js"></script>
   </body>
 </html>
