@@ -578,3 +578,86 @@ div .form {
   color: white;
   font-size: 1.7rem;
 }
+/* ========================Labs2.htm====================== */
+.task_bar .body {
+  padding: 56px;
+}
+#custom-button_2 {
+  width: 122px;
+  height: 40px;
+}
+.task .div_button_choose {
+  display: flex;
+  align-items: center;
+}
+.task .div_button_choose label input {
+  align-items: center;
+}
+#custom-button,
+#custom-button_2 {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#custom-button:hover {
+  background-color: #00b28f;
+}
+#custom-button_2:hover {
+  background-color: #00b28f;
+}
+#custom-text {
+  font-family: sans-serif;
+  color: #aaa;
+}
+.task label:first-child {
+  margin-right: 120px;
+}
+
+.task {
+  height: 50px;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.task input {
+  padding: 10px;
+}
+.table_checkCode table {
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.table_checkCode {
+  height: 500px;
+}
+.table_checkCode table th,
+td {
+  padding: 15px;
+  font-size: 1.6rem;
+}
+.table_checkCode table th {
+  background: lightgray;
+  font: bold;
+  color: black;
+  font-size: 2rem;
+}
+.table_checkCode tr th:first-child {
+  width: 50px;
+}
+.table_checkCode tr th:nth-child(2) {
+  width: 450px;
+}
+.table_checkCode tr th:nth-child(3) {
+  width: 250px;
+}
+.table_checkCode tr th:nth-child(4) {
+  width: 250px;
+}
+.table_checkCode tr th:nth-child(5) {
+  width: 250px;
+}

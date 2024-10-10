@@ -80,16 +80,40 @@
       </div>
       
     </header>
-    <main class="main-contain">
+    <main >
+          <div class="task_bar">  
+            <div class="main_content">
+              <div class="body">
+                <label for=""> <input type="file" id="real-file" hidden="hidden"></label> 
+                <div class="task">
+                      <label>
+                        <button type="button" onclick="choosenFileOnClick()" id="custom-button"> CHOOSE A FILE</button>
+                        <span id="custom-text">No file chosen, yet.</span>
+                      </label>
+                     
+                      <label for=""> <input id="custom-button_2" type="button" value="Go Code"></label>
+                </div>
+              </div>
+              <div class="table_checkCode">
+                <table id="table_CheckCode_status">
+                 <thead>
+                    <tr>
+                      <th>STT</th>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Point</th>
+                      <th>Status</th>
+                    </tr>
+                 </thead>
+                  <tbody>
 
-    </main>
-      <footer class="footer">
-        <div class="line_footer">
-          <i class="fa-regular fa-copyright"></i> Copyright © 2024
-        </div>
-      </footer>
-      <!-- Sign Up Form -->
-      <div class="screen"></div>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+            <!-- Sign Up Form -->
+          <div class="screen"></div>
       <div class="popup">
         <div class="close-btn">&times;</div>
         <div class="form">
@@ -113,6 +137,14 @@
           </div>
         </div>
        </div>
-      <script src="./assets/javascript/JSLabs.js"></script>
+    </main>
+      <footer class="footer">
+        <div class="line_footer">
+          <i class="fa-regular fa-copyright"></i> Copyright © 2024
+        </div>
+      </footer>
+    
+      
+      <script  src="./assets/javascript/JSLabs.js"></script>
   </body>
 </html>
