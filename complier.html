@@ -32,7 +32,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script defer src="./assets/javascript/javaScript.js"></script>
     <title>hci-2025</title>
@@ -69,63 +70,46 @@
             <button for="show" class="btn btn-sign-up">Sign Up</button>
             <button for="show" id="show-login">Login</button>
           </div>
-        </div>
-          <nav class="nav list">
-            <ul>
-              <li><a href="./labs.html">Lab1</a></li>
-              <li><a href="./lab2.html">Lab2</a></li>
-              <li><a href="./lab3.html">Lab3</a></li>
-            </ul>
-        </div>
+      
       </div>
       
     </header>
-    <main >
-          <div class="task_bar">  
-            <div class="main_content">
-            
-              <div class="body">
-                <div class="list_Work"> <label for="mySelect">Bài Tập</label>
-                  <select name="province" id="mySelect" >
-                    <option value="0" selected >none</option>
-                    <option value="1">tạo ra lab1 có các chức năng như mô tả</option>
-                    <option value="2">tạo ra lab2 có các chức năng như mô tả</option>
-                    <option value="3">tạo ra lab3 có các chức năng như mô tả</option>
-                  </select>
-  
+      <main >
+        <div class="main_comp">
+            <div class="compiler_task">
+                <a href="./lab2.html"><label id="back_labs2" for="">  <i class="fa-solid fa-arrow-left"></i></label></a>
+                <div><label for=""> <input type="button" id="submit_Comp" value="Submit" id=""></label></div>
+            </div>  
+           <div class="body_comp">
+                <div class="left_detail">
+                    <h1 class="Title">Title</h1>
+                    <p>Requirements</p>
                 </div>
-                <label for=""> <input type="file" id="real-file" hidden="hidden"></label> 
-                <div class="task">
-                      <label>
-                        <button type="button"  id="custom-button"> CHOOSE A FILE</button>
-                        <span id="custom-text">No file chosen, yet.</span>
-                      </label>
-                     
-                      <label for=""> <a href="./complier.html"><input  id="custom-button_2" type="button" value="Go Code"></a></label>
-                    </div>
-                    <div class="submit_lab2"><label  for=""><input type="button" value="Submit"></label></div>
-                
-              </div>
-              <div class="table_checkCode">
-                <table id="table_CheckCode_status">
-                 <thead>
-                    <tr>
-                      <th>STT</th>
-                      <th>Name</th>
-                      <th>Date</th>
-                      <th>Point</th>
-                      <th>Status</th>
-                    </tr>
-                 </thead>
-                  <tbody>
-
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-            <!-- Sign Up Form -->
-          <div class="screen"></div>
+                <div class="right_code">
+                    <textarea name="" id="text_comp">&lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Document&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                          </textarea></textarea>
+                </div>
+           </div>
+        </div>
+      </main>
+      
+      <footer class="footer">
+        <div class="line_footer">
+          <i class="fa-regular fa-copyright"></i> Copyright © 2024
+        </div>
+      </footer>
+      <!-- Sign Up Form -->
+      <div class="screen"></div>
       <div class="popup">
         <div class="close-btn">&times;</div>
         <div class="form">
@@ -149,14 +133,6 @@
           </div>
         </div>
        </div>
-    </main>
-      <footer class="footer">
-        <div class="line_footer">
-          <i class="fa-regular fa-copyright"></i> Copyright © 2024
-        </div>
-      </footer>
-    
-      
-      <script  src="./assets/javascript/JSLabs.js"></script>
+      <script src="./assets/javascript/JSLabs.js"></script>
   </body>
 </html>

@@ -555,7 +555,7 @@ div .form {
   margin: auto;
 }
 .table_data {
-  height: 125px;
+  height: 25;
   padding: 25px;
 }
 /*  chỉnh sửa table  */
@@ -569,6 +569,7 @@ div .form {
   position: relative;
   width: 82%;
   margin: auto;
+  height: 20%;
 }
 #find {
   font-size: 1.6rem;
@@ -660,4 +661,87 @@ td {
 }
 .table_checkCode tr th:nth-child(5) {
   width: 250px;
+}
+.task_bar .body div:last-child {
+  margin: 75px auto;
+  width: 75px;
+}
+.task_bar .body div:last-child input {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.task_bar .body div:last-child input:hover {
+  background-color: #00b28f;
+}
+.list_Work {
+  text-align: center;
+  margin: 50px auto;
+  width: 400px;
+  font-size: 1.6rem;
+}
+.list_Work select {
+  height: 25px;
+}
+/* ...................complier */
+.compiler_task {
+  display: flex;
+  width: 75%;
+  padding: 56px;
+  margin: auto;
+}
+.compiler_task div {
+  margin: auto;
+}
+#submit_Comp {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.compiler_task a:first-child {
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  background-color: #009578;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#back_labs2:hover {
+  background-color: #00b28f;
+}
+#submit_Comp:hover {
+  background-color: #00b28f;
+}
+.main_comp {
+  margin-bottom: 54px;
+  background-color: #fffcf4;
+}
+.body_comp {
+  display: flex;
+}
+.body_comp .left_detail {
+  border: 2px solid black;
+  margin-left: 50px;
+  width: 35%;
+  height: 650px;
+}
+.body_comp .right_code {
+  margin-right: 25px;
+  width: 65%;
+}
+#text_comp {
+  white-space: pre;
+  font: bold;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  resize: none; /* Vô hiệu hóa kéo rộng textarea */
 }
