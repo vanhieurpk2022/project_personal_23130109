@@ -86,22 +86,24 @@
             
               <div class="body">
                 <div class="list_Work"> <label for="mySelect">Bài Tập</label>
-                  <select name="province" id="mySelect" >
-                    <option value="0" selected >none</option>
-                    <option value="1">tạo ra lab1 có các chức năng như mô tả</option>
-                    <option value="2">tạo ra lab2 có các chức năng như mô tả</option>
-                    <option value="3">tạo ra lab3 có các chức năng như mô tả</option>
-                  </select>
+                  <form name="formid">
+                    <select name="province" id="mySelect"   >
+                      <option value="0" selected >none</option>
+                      <option value="tạo ra lab1 có các chức năng như mô tả">tạo ra lab1 có các chức năng như mô tả</option>
+                      <option value="tạo ra lab2 có các chức năng như mô tả">tạo ra lab2 có các chức năng như mô tả</option>
+                      <option value="tạo ra lab3 có các chức năng như mô tả">tạo ra lab3 có các chức năng như mô tả</option>
+                    </select>
+                  </form>
   
                 </div>
                 <label for=""> <input type="file" id="real-file" hidden="hidden"></label> 
                 <div class="task">
                       <label>
-                        <button type="button"  id="custom-button"> CHOOSE A FILE</button>
+                        <button type="button"  id="custom-button" onclick="choosenFileOnClick()"> CHOOSE A FILE</button>
                         <span id="custom-text">No file chosen, yet.</span>
                       </label>
                      
-                      <label for=""> <a href="./complier.html"><input  id="custom-button_2" type="button" value="Go Code"></a></label>
+                      <label for=""> <input onclick="redirectToComponent()" id="custom-button_2" type="button" value="Go Code"></label>
                     </div>
                     <div class="submit_lab2"><label  for=""><input type="button" value="Submit"></label></div>
                 

@@ -745,3 +745,8 @@ td {
   font-size: 1.6rem;
   resize: none; /* Vô hiệu hóa kéo rộng textarea */
 }
+#label_title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}

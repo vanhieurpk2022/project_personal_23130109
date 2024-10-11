@@ -226,3 +226,13 @@ function choosenFileOnClick() {
     }
   });
 }
+
+function redirectToComponent() {
+  const selectedValue = document.getElementById("mySelect").value;
+  if (selectedValue !== "0") {
+    // Kiểm tra để tránh gửi giá trị "none"
+    window.location.href = `complier.html?labelTitle=${encodeURIComponent(
+      selectedValue
+    )}`; // Chuyển hướng với giá trị
+  }
+}

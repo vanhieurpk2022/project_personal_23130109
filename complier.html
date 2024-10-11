@@ -82,7 +82,7 @@
             </div>  
            <div class="body_comp">
                 <div class="left_detail">
-                    <h1 class="Title">Title</h1>
+                    <h1 id="label_title"></h1>
                     <p>Requirements</p>
                 </div>
                 <div class="right_code">
@@ -133,6 +133,14 @@
           </div>
         </div>
        </div>
-      <script src="./assets/javascript/JSLabs.js"></script>
+      <script src="./assets/javascript/JSLabs.js">
+      </script>
+        <script> 
+        const params = new URLSearchParams(window.location.search); // Lấy thông tin từ URL
+        const value = params.get('labelTitle'); // Lấy giá trị
+        if (value) {
+            document.getElementById("label_title").innerText = value; // Hiển thị giá trị
+        }
+            </script>
   </body>
 </html>
