@@ -750,3 +750,229 @@ td {
   font-size: 2rem;
   text-align: center;
 }
+/* ******************* */
+.body_lab3 {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  width: 250px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+  height: 200px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+}
+.card-content {
+  padding: 20px;
+}
+h2 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.email {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 15px;
+}
+.contact-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #666;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* 8**88888888 Lab4 //////////*/
+.body_lab4 {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.container_lab4_content1 {
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  height: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header_lab4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 15px;
+}
+.welcome h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.welcome a {
+  color: #6200ee;
+  text-decoration: none;
+}
+.streak-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.streak-box h2 {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+.streak-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.streak-flame {
+  white-space: warp;
+  width: 150px;
+  color: #6200ee;
+  font-size: 24px;
+}
+.streak-flame strong {
+  font-size: 12px;
+}
+.activity-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #e0e0e0;
+  position: relative;
+}
+.activity-circle::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  border: 5px solid #4caf50;
+  clip: rect(0, 35px, 70px, 0);
+}
+.courses {
+  margin-top: 10%;
+}
+.course-tabs {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+.course-tabs a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+.course-tabs a.active {
+  border-bottom: 2px solid #6200ee;
+  color: #6200ee;
+}
+.course-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+}
+.course-card {
+  min-width: 250px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.course-image {
+  height: 140px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #fff;
+}
+.course-info {
+  padding: 15px;
+}
+.course-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+.course-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+.body_lab4_content3 {
+  width: 75%;
+  margin: auto;
+  height: 600px;
+}
+.header_lab4_content3 {
+  display: flex;
+  padding: 20px;
+}
+.header_lab4_content3 h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.courses_lab4_content3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.courses_lab4_content3_1 {
+  height: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
