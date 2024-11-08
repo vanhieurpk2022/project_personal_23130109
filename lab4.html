@@ -3,215 +3,274 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
- 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="./assets/javascript/javaScript.js"></script>
-    <title>hci-2025</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/myStyle.css" />
+    <title>Hci-2025-23130109</title>
   </head>
-  <body >
-    <header class="header fixed">
-      <div class="main-contain">
-        <div class="body">
-          <!-- logo -->
-          <a href="./index.html" class="getImg"
-          ><img
-            src="./assets/img/logo.png"
-            width="45"
-            alt="Lesson"
-            class="logo"
-        /></a>
-          <!-- nav -->
-          <nav class="nav">
-            <ul>
-              <li class="active">
-                <a href="./index.html">Home</a>
+  <body>
+    <div class="container p-2 border border-bottom">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="background-color: #fffcf4"
+      >
+        <div class="container" style="background-color: #fffcf4">
+          <a class="navbar-brand img-fluid" href="#"
+            ><img src="./assets/img/logo.png" width="76px" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-lg-0 px-5 mt-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
               </li>
-              <li>
-                <a href="./about.html">About</a>
+              <li class="nav-item ms-lg-3">
+                <a class="nav-link" href="./about.html">About</a>
               </li>
-              <li>
-                <a href="./labs.html">Labs</a>
+              <li class="nav-item dropdown ms-lg-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Labs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./labs.html">Lab1</a></li>
+                  <li><a class="dropdown-item" href="./lab2.html">Lab2</a></li>
+                  <li><a class="dropdown-item" href="./lab3.html">Lab3</a></li>
+                  <li><a class="dropdown-item" href="./lab4.html">Lab4</a></li>
+                  <li><a class="dropdown-item" href="./lab5.html">Lab5</a></li>
+                  <li><a class="dropdown-item" href="./lab6.html">Lab6</a></li>
+                </ul>
               </li>
-             
             </ul>
-          </nav>
-          <!-- btn action -->
-          <div class="action">
-            <button for="show" class="btn btn-sign-up">Sign Up</button>
-            <button for="show" id="show-login">Login</button>
-          </div>
-        </div>
-          <nav class="nav list">
-            <ul>
-              <li><a href="./labs.html">Lab1</a></li>
-              <li><a href="./lab2.html">Lab2</a></li>
-              <li><a href="./lab3.html">Lab3</a></li>
-              <li><a href="./lab4.html">Lab4</a></li>
-            </ul>
-        </div>
-      </div>
-      
-    </header>
-      
-      <main>
-       <div class="body_lab4">
-             <div class="container_lab4_content1" style="height: 750px;">
-                 <div class="header_lab4">
-                     <div class="avatar">H</div>
-                     <div class="welcome">
-                     <h1>Welcome back, Vi Van Hieu</h1>
-                        <a href="#">Add occupation and interests</a>
-                     </div>
-             </div>
-            
-             <div class="streak-box">
-                    <div>
-                    <h2>Weekly streak</h2>
-                    <p>One ring down, one to go. Keep it up!</p>
-                    </div>
-               <div>
-                    <div class="streak-info">
-                        <div class="streak-flame">🔥 2 weeks <strong>Current streak</strong></div>
-                        <div class="activity-circle"></div>
-                    </div>
-                    <div class="activity_lab4"><a href="">See all activity</a></div>
-               </div>
-                </div>
-         
-              <div class="container_lab4_content2" > 
-                <div class="courses">
-                <h2>Pick up where you left off</h2>
-                <div class="course-tabs">
-                    <a href="#" class="active">Courses</a>
-                    <a href="#">Learning paths</a>
-                    <a href="#">Certification preparation</a>
-                </div>
-                <div class="course-list">
-                    <div class="course-card">
-                        <div class="course-image">▶️</div>
-                        <div class="course-info">
-                            <h3>FPT_ISMS Refresh Training S2 2024</h3>
-                            <p>1. Introduction</p>
-                            <p>Lecture • 1m</p>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-image">▶️</div>
-                        <div class="course-info">
-                            <h3>MuleSoft 4.X Complete Guide For Beginners</h3>
-                            <p>2. Integration introduction</p>
-                            <p>Lecture • 6m left</p>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-image">❓</div>
-                        <div class="course-info">
-                            <h3>English Vocabulary: 504 Essential Words</h3>
-                            <p>7. Quiz and Questions</p>
-                            <p>Quiz • 9 questions</p>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="d-flex me-4">
+              <div class="px-2 py-1 bg-black me-2 rounded-start rounded-end">
+                <button
+                  class="btn"
+                  style="background-color: black; color: white"
+                >
+                  <i class="fa-solid fa-user-plus me-2"></i> Sign up
+                </button>
+              </div>
+              <div class="px-4 py-1 bg-black me-2 rounded-start rounded-end">
+                <button
+                  class="btn"
+                  style="background-color: black; color: white"
+                >
+                  Login
+                </button>
               </div>
             </div>
-       </div>
-       <div class="container_lab4_content_3" style="height: 650px;">
-            <div class="body_lab4_content3">
-                <div class="header_lab4_content3">
-                <h1>Based on your Certification interests, we recommend</h1>
-                <a href="">Edit Certification interests</a>
-                 </div>
-                <div class="courses_lab4_content3">
-                    <div class="courses_lab4_content3_1">
-                        <img src="java_ocajp.png" alt="Java OCAJP Course">
-                        <h3>Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808</h3>
-                        <p>Andrii Piatakha, Learn IT University</p>
-                        <div class="rating">4.6 <span class="stars">★★★★☆</span> (438)</div>
-                    </div>
-            
-                    <div class="courses_lab4_content3_1">
-                        <img src="java_certification.png" alt="Java Certification Course">
-                        <h3>Oracle Java Certification - Pass the Associate 1Z0-808 Exam</h3>
-                        <p>Tim Buchalka's Learn Programming Academy, Goran...</p>
-                        <div class="rating">4.6 <span class="stars">★★★★☆</span> (5,906)</div>
-                    </div>
-            
-                    <div class="courses_lab4_content3_1">
-                        <img src="java_se8.png" alt="Java SE 8 Developer Course">
-                        <h3>Complete Java SE 8 Developer Bootcamp - OCA Prep Included</h3>
-                        <p>Intertech Training, Jeff Jensen</p>
-                        <div class="rating">4.6 <span class="stars">★★★★☆</span> (9,726)</div>
-                    </div>
-            
-                    <div class="courses_lab4_content3_1">
-                        <img src="spring_certification.png" alt="Spring Professional Certification">
-                        <h3>Spring Professional Certification Exam Tutorial - Module 02</h3>
-                        <p>Dominik Cebula</p>
-                        <div class="rating">4.6 <span class="stars">★★★★☆</span> (1,121)</div>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-      </main>
-      <!-- <footer class="footer">
-        <div class="line_footer">
-          <i class="fa-regular fa-copyright"></i> Copyright © 2024
-        </div>
-      </footer> -->
-      <!-- Sign Up Form -->
-      <div class="screen"></div>
-      <div class="popup">
-        <div class="close-btn">&times;</div>
-        <div class="form">
-          <h2>Login</h2>
-          <div class="form-element">
-            <label for="email">Email</label>
-            <input type="text" id="emaill" placeholder="Enter email">
-          </div>
-          <div class="form-element">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password">
-          </div>
-          <div class="form-element">
-            <a href="#">Forgot password?</a><br>
-          </div>
-          <div class="form-element">
-            <button>Sign in</button>
-          </div>
-          <div class="form-element">
-            <p >Don't have an account? <a href="">Sign up</a></p>
+
+    <!-- header  -->
+    <header class="main_header"></header>
+    <main>
+      <div
+        class="container border mt-5 p-5 rounded-end rounded-start"
+        style="background-color: white"
+      >
+        <div class="Line 1 d-flex flex-row mt-3">
+          <span
+            class="fs-4 px-4 py-3 rounded-circle ms-3 me-4"
+            style="background-color: #333; color: white"
+            >H</span
+          >
+          <div>
+            <div class="d-flex flex-column">
+              <span class="fs-4">WelCome Back, Vi Van Hieu</span>
+              <a class="text-decoration-none" href=""
+                >Add occupation and interests</a
+              >
+            </div>
           </div>
         </div>
-       </div>
-      <script src="./assets/javascript/JSLabs.js"></script>
+        <div class="container border mt-5 py-4">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+              <span class="fs-2 fw-bold">Weekly steak</span>
+              <span>One ring down, one to go. Keep it up!</span>
+            </div>
+            <div class="d-flex flex-column ms-auto">
+              <span class="fs-4"
+                ><i class="fs-3 fa-solid fa-fire" style="color: #e27a18"></i> 2
+                weeks
+              </span>
+              <span><i>Current streak</i></span>
+              <a class="text-decoration-none" href="">See all activity</a>
+            </div>
+            <div class="ms-4 mt-2 me-5 activity-circle"></div>
+          </div>
+        </div>
+        <div class="">
+          <div class="container py-4">
+            <ul class="navbar-nav d-flex flex-row mt-5">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link active border-success-subtle border-bottom"
+                  >Courses
+                </a>
+              </li>
+              <li class="nav-item ms-3">
+                <a href="#" class="nav-link">Learning paths </a>
+              </li>
+              <li class="nav-item ms-3">
+                <a href="#" class="nav-link">Certification </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="card me-3" style="width: 18rem">
+              <div class="fs-1 align-items-center justify-content-center">
+                <div class="text-center p-5">▶️</div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">FPT_ISMS Refresh Training S2 2024</h5>
+                <span class="card-text opacity-75">1.introduction</span>
+                <span class="card-text opacity-75">lecuture • 1m</span>
+              </div>
+            </div>
+            <div class="card me-3" style="width: 18rem">
+              <div class="fs-1 align-items-center justify-content-center">
+                <div class="text-center p-5">▶️</div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  MuleSoft 4.X Complete Guide For Beginners
+                </h5>
+                <span class="card-text opacity-75"
+                  >2. Integration introduction
+                </span>
+                <span class="card-text opacity-75">Lecture • 6m left </span>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="fs-1 align-items-center justify-content-center">
+                <div class="text-center p-5">❓</div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  English Vocabulary: 504 Essential Words
+                </h5>
+                <span class="card-text opacity-75">7. Quiz and Questions </span>
+                <span class="card-text opacity-75">Quiz • 9 questions </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 p-3">
+        <div class="d-flex flex-row">
+          <h1>Based on your Certification interests, we recommend</h1>
+          <a class="ms-3" href="">Edit Certification interests</a>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly">
+          <div class="card" style="width: 18rem">
+            <div class="fs-1 align-items-center justify-content-center">
+              <img src="./assets/img/logan-weaver-lgnwvr-OFsy92Sy530-unsplash.jpg" class="img-thumbnail card-img-top"  alt="..." />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">
+                Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
+              </h5>
+              <span class="card-text opacity-75 text-center"
+                >Andrii Piatakha, Learn IT University
+              </span>
+              <span class="text-center"> 4.6 ★★★★☆ (438)</span>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="fs-1 align-items-center justify-content-center">
+              <img src="./assets/img/boesijana-Cpy32KCZ6GU-unsplash.jpg"  class="img-thumbnail card-img-top" alt="..." />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">
+                Oracle Java Certification - Pass the Associate 1Z0-808 Exam
+              </h5>
+              <span class="card-text opacity-75 text-center"
+                >Tim Buchalka's Learn Programming Academy, Goran...
+              </span>
+              <span class="text-center"> 4.6 ★★★★☆ (5,906) </span>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="fs-1 align-items-center justify-content-center">
+              <img src="./assets/img/granduate.jpg"  class="img-thumbnail card-img-top" alt="..." />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">
+                Complete Java SE 8 Developer Bootcamp - OCA Prep Included
+              </h5>
+              <span class="card-text opacity-75 text-center"
+                >Intertech Training, Jeff Jensen
+              </span>
+              <span class="text-center"> 4.6 ★★★★☆ (9,726) </span>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="fs-1 align-items-center justify-content-center">
+              <img src="./assets/img/steve-johnson-37Ue2JLXHvE-unsplash.jpg" class="img-thumbnail card-img-top" alt="..." />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">
+                Spring Professional Certification Exam Tutorial - Module 02
+              </h5>
+              <span class="card-text opacity-75 text-center"
+                >Dominik Cebula
+              </span>
+              <span class="text-center"> 4.6 ★★★★☆ (1,121)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer_id bg-black">
+      <div class="text-center bg-black" style="color: white">
+        Coppy <i class="fa-solid fa-copyright"></i> right 2024
+      </div>
+    </footer>
+    <!-- Nhúng JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
