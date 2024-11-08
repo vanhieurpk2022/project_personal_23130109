@@ -13,9 +13,68 @@
   <body>
       <!-- Login -->
        <!-- Sign Up Form -->
-      
+      <!-- Scrollable modal -->
+      <!-- Button trigger modal -->
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div  class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h1 class="modal-title fs-5 ms-auto" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+       <a href="#"> <span>forgot password?</span></a>
+      </div>
+      <div class="modal-footer d-flex flex-column">
+        <button type="button" class="btn btn-success px-3 " data-bs-dismiss="modal">Login</button>
+        <span>or</span>
+        <button type="button" class="btn btn-success px-3 " data-bs-toggle="modal" data-bs-target="#exampleModal_02">Create new account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sign up -->
+<div class="modal fade" id="exampleModal_02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div  class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h1 class="modal-title fs-5 ms-auto" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating ">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Confirm you password</label>
+        </div>
+       <a  data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> <span>Login?</span></a>
+      </div>
+      <div class="modal-footer d-flex flex-column">
+        
+        <button type="button" class="btn btn-success px-3 " data-bs-dismiss="modal " data-bs-toggle="modal" data-bs-target="#exampleModal_02"><i class="fa-solid fa-user-plus me-2"></i> Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="container p-2 border border-bottom"  >
       <nav class="navbar navbar-expand-lg bg-body-tertiary"  style="background-color: #fffcf4;" >
@@ -50,14 +109,14 @@
               </ul>
               
             <div class="d-flex me-4">
-             <div class="px-2 py-1 bg-black me-2 rounded-start rounded-end"> <button class="btn " style="background-color: black; color: white;"><i class="fa-solid fa-user-plus me-2"></i> Sign up</button></div>
-              <div class="px-4 py-1 bg-black me-2 rounded-start rounded-end"><button class="btn " style="background-color: black; color: white;">Login</button></div>
+             <div class="px-2 py-1 bg-black me-2 rounded-start rounded-end"> <button class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal_02" style="background-color: black; color: white;"><i class="fa-solid fa-user-plus me-2"></i> Sign up</button></div>
+              <div class="px-4 py-1 bg-black me-2 rounded-start rounded-end"><button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn " style="background-color: black; color: white;">Login</button></div>
             </div>
           </div>
         </div>
       </nav>
     </div>
-
+    
     <!-- header  -->
      <header class="main_header">
      
