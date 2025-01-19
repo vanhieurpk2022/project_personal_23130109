@@ -74,6 +74,7 @@ function themSinhVien(event) {
   return false; // Ngăn chặn form submit
 }
 
+
 // Thêm event listener cho form
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
